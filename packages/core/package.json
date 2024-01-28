@@ -1,0 +1,45 @@
+{
+  "name": "@conveadjs/core",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Core implementation for conveadjs",
+  "author": "Zdorovtsev Viktor",
+  "license": "MIT",
+  "homepage": "https://github.com/conveadjs/core#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conveadjs/core.git",
+    "directory": "packages/core"
+  },
+  "bugs": "https://github.com/conveadjs/core/issues",
+  "keywords": [
+    "convead"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild",
+    "prepublishOnly": "nr build"
+  }
+}

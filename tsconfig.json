@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["esnext", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "paths": {
+      "@conveadjs/core": ["./packages/core/src/index.ts"],
+      "@conveadjs/vite": ["./packages/vite/src/index.ts"]
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "types": ["vite/client", "node"],
+  "include": [
+    "**/*.ts",
+    "**/*.mjs"
+  ],
+  "exclude": [
+    "**/node_modules/**",
+    "**/dist/**"
+  ]
+}

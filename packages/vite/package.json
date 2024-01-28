@@ -1,0 +1,48 @@
+{
+  "name": "@conveadjs/vite",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Vite plugin for conveadjs",
+  "author": "Zdorovtsev Viktor",
+  "license": "MIT",
+  "homepage": "https://github.com/conveadjs/vite#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conveadjs/vite.git",
+    "directory": "packages/vite"
+  },
+  "bugs": "https://github.com/conveadjs/core/issues",
+  "keywords": [
+    "convead"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "@conveadjs/core": "workspace:*"
+  }
+}

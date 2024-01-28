@@ -1,0 +1,19 @@
+{
+  "name": "example",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@conveadjs/core": "workspace:*",
+    "@conveadjs/vite": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  }
+}

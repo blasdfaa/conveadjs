@@ -15,7 +15,7 @@
     "build": "nr js:build"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.4.6",
+    "@antfu/eslint-config": "4.11.0",
     "@antfu/ni": "^0.21.12",
     "@antfu/utils": "^0.7.7",
     "@conveadjs/core": "workspace:*",
